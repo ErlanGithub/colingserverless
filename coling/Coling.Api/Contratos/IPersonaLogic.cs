@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coling.API.Afiliados.Contratos
+namespace Coling.Api.Afiliados.Contratos
 {
     public interface IPersonaLogic
     {
@@ -14,6 +14,5 @@ namespace Coling.API.Afiliados.Contratos
         public Task<bool> EliminarPersona(int id);
         public Task<List<Persona>> ListarPersonaTodos();
         public Task<Persona> ObtnerPersonaById(int id);
-
     }
 }
