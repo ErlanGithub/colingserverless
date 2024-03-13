@@ -3,7 +3,7 @@ using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Coling.Api.BolsaTrabajo
+namespace Coling.Api.Afiliados
 {
     public class Function1
     {

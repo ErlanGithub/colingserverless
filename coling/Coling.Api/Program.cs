@@ -1,7 +1,6 @@
-using Coling.API.Afiliados;
-using Coling.API.Afiliados.Contratos;
-using Coling.API.Afiliados.Implementacion;
-using Microsoft.AspNetCore.Builder;
+using Coling.Api.Afiliados;
+using Coling.Api.Afiliados.Contratos;
+using Coling.Api.Afiliados.Implementacion;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +21,6 @@ var host = new HostBuilder()
         services.AddDbContext<Contexto>(options => options.UseSqlServer(
                      configuration.GetConnectionString("cadenaConexion")));
         services.AddScoped<IPersonaLogic, PersonaLogic>();
-
     })
     .Build();
 

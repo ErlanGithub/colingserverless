@@ -1,8 +1,8 @@
 {
   "profiles": {
-    "Coling.API.Curriculum": {
+    "Coling.Api.Curriculum": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7227",
+      "commandLineArgs": "--port 7150",
       "launchBrowser": false
     }
   }

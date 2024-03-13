@@ -3,10 +3,10 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace Coling.API.Afiliados.Migrations
+namespace Coling.Api.Afiliados.Migrations
 {
     /// <inheritdoc />
-    public partial class migracion01 : Migration
+    public partial class Migracion01 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
