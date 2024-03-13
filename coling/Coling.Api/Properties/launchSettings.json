@@ -1,9 +1,11 @@
 {
   "profiles": {
-    "Coling.Api": {
+    "Coling.API": {
       "commandName": "Project",
-      "commandLineArgs": "--port 7196",
-      "launchBrowser": false
+      "commandLineArgs": "--port 7028",
+      "environmentVariables": {
+        "cadenaConexion": "Data Source=DESKTOP-415UH8S;Initial Catalog=colingDemo;Integrated Security=True; TrustServerCertificate=true;"
+      }
     }
   }
 }
