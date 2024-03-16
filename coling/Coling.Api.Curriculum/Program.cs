@@ -11,6 +11,8 @@ var host = new HostBuilder()
         services.AddApplicationInsightsTelemetryWorkerService();
         services.ConfigureFunctionsApplicationInsights();
         services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
+        services.AddScoped<IEstudiosRepositorio, EstudiosImplementacion>();
+        services.AddScoped<IExperienciaRepositorio,ExperienciaImplementacion>();
     })
     .Build();
 
