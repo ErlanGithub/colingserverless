@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Azure.Functions.Worker.Http;
+using Microsoft.Azure.WebJobs.Extensions.OpenApi.Core.Attributes;
 using Microsoft.Extensions.Logging;
 using Microsoft.Win32;
 using System.Net;
@@ -51,6 +52,9 @@ namespace Coling.Api.Curriculum.Endpoint
         }
         /*----------------------Listar todos--------------*/
         [Function("ListarTodosInstitucionFuncion")]
+        [OpenApiOperation("ListarSpec", "InstitucionListarTodos",Description = "este endpoint sirve para listar todas las instituciones")]
+        [OpenApiResponseWithBody(statusCode:HttpStatusCode.OK, contentType:"application/json",bodyType: typeof(List<Institucion>),
+            Description = "mostrara una lista de instituciones")]
         public async Task<HttpResponseData> ListarTodosInstitucion([HttpTrigger(AuthorizationLevel.Function, "get")] HttpRequestData req)
         {
             HttpResponseData respuesta;

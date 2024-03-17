@@ -3,9 +3,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Coling.Api.Curriculum.Contratos.Repositorios;
 using Coling.Api.Curriculum.implementacion.Repositorios;
+using Microsoft.Azure.Functions.Worker.Extensions.OpenApi.Extensions;
 
 var host = new HostBuilder()
-    .ConfigureFunctionsWebApplication()
+    .ConfigureFunctionsWebApplication(/*worker=>worker.UseNewtonsoftJson()*/)
     .ConfigureServices(services =>
     {
         services.AddApplicationInsightsTelemetryWorkerService();
