@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "Coling.Authetication": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7103",
+      "environmentVariables": {
+        "LlaveSecreta": "fsdnfksdjfjksdhnkj234534534534_Sdfgdfgdfg456354768*9666fdsfsddfhfghfFFDSSSDFD206"
+      }
+    }
+  }
+}
