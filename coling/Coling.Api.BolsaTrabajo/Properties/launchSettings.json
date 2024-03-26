@@ -3,7 +3,9 @@
     "Coling.Api.BolsaTrabajo": {
       "commandName": "Project",
       "commandLineArgs": "--port 7151",
-      "launchBrowser": false
+      "environmentVariables": {
+        "MongoClient": "mongodb+srv://mendozaerlan65:ErLaN182Boca@cluster1.kjayyzs.mongodb.net/"
+      }
     }
   }
 }

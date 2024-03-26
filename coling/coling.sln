@@ -19,11 +19,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Multiplataforma", "Multipla
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coling.Vista", "Coling.Vista\Coling.Vista.csproj", "{1AFD5618-10FE-41FF-8369-8BC2DBD33B47}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coling.Utilitarios", "Coling.Utilitarios\Coling.Utilitarios.csproj", "{115795F1-4E13-4BF8-B1E5-5FADD4DECBAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coling.Utilitarios", "Coling.Utilitarios\Coling.Utilitarios.csproj", "{115795F1-4E13-4BF8-B1E5-5FADD4DECBAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ColingRepositorioAutenticacion", "ColingRepositorioAutenticacion\ColingRepositorioAutenticacion.csproj", "{F6DDBB40-8B3B-49BF-BBF5-B182C3E81CAB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ColingRepositorioAutenticacion", "ColingRepositorioAutenticacion\ColingRepositorioAutenticacion.csproj", "{F6DDBB40-8B3B-49BF-BBF5-B182C3E81CAB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Coling.Authetication", "Coling.Authetication\Coling.Authetication.csproj", "{B09669A9-E2A5-4B71-BA31-A2C0AF2AF07A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Coling.Authetication", "Coling.Authetication\Coling.Authetication.csproj", "{B09669A9-E2A5-4B71-BA31-A2C0AF2AF07A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
