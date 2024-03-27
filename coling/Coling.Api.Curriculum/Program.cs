@@ -4,9 +4,10 @@ using Microsoft.Extensions.Hosting;
 using Coling.Api.Curriculum.Contratos.Repositorios;
 using Coling.Api.Curriculum.implementacion.Repositorios;
 using Microsoft.Azure.Functions.Worker.Extensions.OpenApi.Extensions;
+using Coling.Utilitarios.Middleware;
 
 var host = new HostBuilder()
-    .ConfigureFunctionsWebApplication(/*worker=>worker.UseNewtonsoftJson()*/)
+    //.ConfigureFunctionsWebApplication()
     .ConfigureServices(services =>
     {
         services.AddApplicationInsightsTelemetryWorkerService();
@@ -14,6 +15,11 @@ var host = new HostBuilder()
         services.AddScoped<IInstitucionRepositorio, InstitucionRepositorio>();
         services.AddScoped<IEstudiosRepositorio, EstudiosImplementacion>();
         services.AddScoped<IExperienciaRepositorio,ExperienciaImplementacion>();
+        //
+        services.AddSingleton<JwtMiddleware>();
+    }).ConfigureFunctionsWebApplication(x =>
+    {
+        x.UseMiddleware<JwtMiddleware>();
     })
     .Build();
 
