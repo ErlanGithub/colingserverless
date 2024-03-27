@@ -15,7 +15,7 @@ namespace Coling.Api.Curriculum.Model
         public string Tipo { get; set; }
         public string Direccion { get; set; }
         public string Estado { get; set; }
-        //implementacion de itableentity
+       
         public string PartitionKey { get; set; }
         public string RowKey { get; set; }
         public DateTimeOffset? Timestamp { get; set; }
